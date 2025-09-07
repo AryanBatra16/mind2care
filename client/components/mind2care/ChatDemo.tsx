@@ -7,12 +7,12 @@ export default function ChatDemo() {
   ];
 
   return (
-    <div className="mx-auto w-full max-w-3xl rounded-2xl border border-border bg-background p-4 shadow-soft">
-      <div className="max-h-[360px] space-y-3 overflow-y-auto p-2">
+    <div id="chat" className="mx-auto w-full max-w-2xl rounded-3xl border border-border bg-background p-4 shadow-card md:p-6">
+      <div className="flex max-h-[60vh] flex-col gap-3 overflow-y-auto p-1">
         {messages.map((m, i) => (
           <div key={i} className={`flex ${m.from === "user" ? "justify-end" : "justify-start"}`}>
             <div
-              className={`max-w-[80%] rounded-2xl px-4 py-3 text-sm leading-relaxed shadow-soft ${m.from === "user" ? "bg-primary text-primary-foreground rounded-br-md" : "bg-[hsl(var(--border))] text-foreground rounded-bl-md"}`}
+              className={`max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed shadow-soft ${m.from === "user" ? "bg-primary text-white rounded-br-md" : "bg-[hsl(var(--border))] text-foreground rounded-bl-md"}`}
             >
               {m.text}
             </div>
@@ -21,11 +21,11 @@ export default function ChatDemo() {
       </div>
       <div className="mt-4 flex items-center gap-2">
         <input
-          className="flex-1 rounded-xl border border-border bg-background px-3 py-2 text-sm outline-none ring-offset-background placeholder:text-foreground/50 focus:ring-2 focus:ring-ring"
-          placeholder="Type a message..."
+          className="flex-1 rounded-xl border border-border bg-card px-3 py-3 text-sm outline-none placeholder:text-foreground/60 focus:ring-2 focus:ring-ring"
+          placeholder="Share how you’re feeling today…"
           readOnly
         />
-        <button className="rounded-xl bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground shadow-soft transition-transform hover:scale-[1.02]">
+        <button className="rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-white shadow-soft transition-transform hover:scale-[1.02]">
           Send
         </button>
       </div>
