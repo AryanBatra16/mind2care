@@ -29,7 +29,7 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
     >
       <div className="absolute inset-0 bg-black/20" onClick={onClose} />
       <aside
-        className={`absolute left-0 top-0 h-full w-[86%] max-w-sm translate-x-0 bg-background shadow-card transition-transform duration-300 md:w-[420px] ${open ? "translate-x-0" : "-translate-x-full"}`}
+        className={`absolute left-0 top-0 h-full w-[86%] max-w-sm translate-x-0 bg-[hsl(var(--beige))] shadow-card transition-transform duration-300 md:w-[420px] ${open ? "translate-x-0" : "-translate-x-full"}`}
         aria-label="Site navigation"
       >
         <div className="flex items-center justify-between border-b border-border px-5 py-4">
