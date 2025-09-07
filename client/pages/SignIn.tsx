@@ -8,7 +8,7 @@ export default function SignIn() {
           <CardBody>
             <h1 className="mb-4 text-center text-xl font-semibold text-[hsl(var(--charcoal))]">Sign In</h1>
             <form className="space-y-3">
-              <input className="w-full rounded-xl border border-[hsl(var(--grayblue))] bg-[hsl(var(--beige))] px-3 py-2 text-sm" placeholder="Email" />
+              <input className="w-full rounded-xl border border-[hsl(var(--grayblue))] bg-white px-3 py-2 text-sm" placeholder="Email" />
               <Button type="submit" className="w-full">Continue</Button>
               <Button type="button" variant="secondary" className="w-full">Continue with Google</Button>
             </form>
