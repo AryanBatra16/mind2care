@@ -37,13 +37,13 @@ type Props = { onMenuClick?: () => void };
 
 export default function Header({ onMenuClick }: Props) {
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-[hsl(var(--grayblue))]/60 bg-[hsl(var(--offwhite))]">
+    <header className="sticky top-0 z-40 w-full border-b border-border/60 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="mx-auto grid max-w-7xl grid-cols-3 items-center px-6 py-4">
         <div className="flex items-center gap-2">
           <button
             aria-label="Open menu"
             onClick={onMenuClick}
-            className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-secondary text-[hsl(var(--charcoal))] shadow-soft transition-transform hover:scale-[1.03]"
+            className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-secondary text-secondary-foreground shadow-soft transition-transform hover:scale-[1.03]"
           >
             <Menu className="h-5 w-5" />
           </button>
