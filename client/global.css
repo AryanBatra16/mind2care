@@ -13,13 +13,13 @@
   */
   :root {
     /* Mind2Care Light Theme */
-    --background: 9 68% 96%; /* Off-White #FCF1EF */
+    --background: 201 10% 82%; /* Soft Gray-Blue #CDD3D6 */
     --foreground: 227 7% 39%; /* Deep Charcoal #5E616B */
 
     --card: 30 39% 85%; /* Beige Sand #E7D8C9 */
     --card-foreground: 227 7% 39%;
 
-    --popover: 9 68% 96%;
+    --popover: 9 68% 96%; /* Off-White contrast sections */
     --popover-foreground: 227 7% 39%;
 
     --primary: 353 45% 81%; /* Soft Rose #E5BABF */
@@ -53,12 +53,12 @@
     --sidebar-border: 201 10% 82%;
     --sidebar-ring: 353 45% 81%;
 
-    /* Token aliases */
-    --rose: var(--primary);
-    --offwhite: var(--background);
-    --beige: var(--card);
-    --grayblue: var(--border);
-    --charcoal: var(--foreground);
+    /* Brand token constants (HSL values) */
+    --rose: 353 45% 81%;
+    --offwhite: 9 68% 96%;
+    --beige: 30 39% 85%;
+    --grayblue: 201 10% 82%;
+    --charcoal: 227 7% 39%;
   }
 
   .dark {
