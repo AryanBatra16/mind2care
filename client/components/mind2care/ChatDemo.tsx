@@ -20,13 +20,13 @@ export default function ChatDemo({ fullHeight = false }: { fullHeight?: boolean 
   }, [messages, typing]);
 
   return (
-    <section aria-label="Chatbot" className={`mx-auto w-full max-w-[820px] rounded-2xl border border-[hsl(var(--grayblue))] bg-[hsl(var(--offwhite))] shadow-card ${fullHeight ? "h-[70vh] md:h-[70vh]" : ""}`}>
+    <section aria-label="Chatbot" className={`mx-auto w-full max-w-[820px] rounded-2xl border border-[hsl(var(--grayblue))] bg-[hsl(var(--beige))] shadow-card ${fullHeight ? "h-[70vh] md:h-[70vh]" : ""}`}>
       <div className="flex h-full flex-col">
         <div ref={listRef} role="log" aria-live="polite" className="flex-1 space-y-3 overflow-y-auto p-4">
           <div className="sticky top-0 z-10 mx-auto w-fit rounded-full bg-white/70 px-3 py-1 text-[10px] text-[hsl(var(--charcoal))]/70 backdrop-blur">Today</div>
           {messages.map((m, i) => (
             <div key={i} className={`flex ${m.from === "user" ? "justify-end" : "justify-start"}`}>
-              <div className={`max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed shadow-soft ${m.from === "user" ? "rounded-br-md bg-[hsl(var(--rose))] text-white" : "rounded-bl-md bg-[hsl(var(--grayblue))] text-[hsl(var(--charcoal))]"}`}>
+              <div className={`max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed shadow-soft ${m.from === "user" ? "rounded-br-md bg-[hsl(var(--rose))] text-white" : "rounded-bl-md bg-[hsl(var(--beige))] text-[hsl(var(--charcoal))] border border-[hsl(var(--grayblue))]/60"}`}>
                 <p>{m.text}</p>
                 {m.time ? <span className="mt-1 block text-[10px] opacity-70">{m.time}</span> : null}
               </div>
