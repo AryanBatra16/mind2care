@@ -12,7 +12,7 @@ export default function ChatDemo() {
         {messages.map((m, i) => (
           <div key={i} className={`flex ${m.from === "user" ? "justify-end" : "justify-start"}`}>
             <div
-              className={`max-w-[80%] rounded-2xl px-4 py-3 text-sm leading-relaxed shadow-soft ${m.from === "user" ? "bg-primary text-primary-foreground rounded-br-md" : "bg-muted text-foreground rounded-bl-md"}`}
+              className={`max-w-[80%] rounded-2xl px-4 py-3 text-sm leading-relaxed shadow-soft ${m.from === "user" ? "bg-primary text-primary-foreground rounded-br-md" : "bg-[hsl(var(--border))] text-foreground rounded-bl-md"}`}
             >
               {m.text}
             </div>
