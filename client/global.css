@@ -1,5 +1,5 @@
 /** @import must precede all other statements */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Poppins:wght@300;400;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -12,89 +12,86 @@
    * A different format will require also updating the theme in tailwind.config.ts.
   */
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Mind2Care Light Theme */
+    --background: 9 68% 96%; /* Off-White #FCF1EF */
+    --foreground: 227 7% 39%; /* Deep Charcoal #5E616B */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 30 39% 85%; /* Beige Sand #E7D8C9 */
+    --card-foreground: 227 7% 39%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 9 68% 96%;
+    --popover-foreground: 227 7% 39%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 353 45% 81%; /* Soft Rose #E5BABF */
+    --primary-foreground: 227 7% 39%; /* Text on rose */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 30 39% 85%; /* Beige Sand */
+    --secondary-foreground: 227 7% 39%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 201 10% 92%; /* Softer gray-blue tint */
+    --muted-foreground: 227 7% 39%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 353 45% 81%; /* Soft Rose accents */
+    --accent-foreground: 227 7% 39%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 201 10% 82%; /* Soft Gray-Blue #CDD3D6 */
+    --input: 201 10% 82%;
+    --ring: 227 7% 39%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar (if used) */
+    --sidebar-background: 9 68% 96%;
+    --sidebar-foreground: 227 7% 39%;
+    --sidebar-primary: 353 45% 81%;
+    --sidebar-primary-foreground: 227 7% 39%;
+    --sidebar-accent: 30 39% 85%;
+    --sidebar-accent-foreground: 227 7% 39%;
+    --sidebar-border: 201 10% 82%;
+    --sidebar-ring: 353 45% 81%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Mind2Care Dark Theme */
+    --background: 227 7% 18%; /* Deep Charcoal intensified */
+    --foreground: 9 68% 96%; /* Off-White */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 227 7% 22%;
+    --card-foreground: 9 68% 96%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 227 7% 18%;
+    --popover-foreground: 9 68% 96%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 353 45% 81%;
+    --primary-foreground: 227 7% 18%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 227 7% 24%;
+    --secondary-foreground: 9 68% 96%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 227 7% 26%;
+    --muted-foreground: 9 68% 90%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 353 45% 81%;
+    --accent-foreground: 227 7% 18%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 227 7% 28%;
+    --input: 227 7% 28%;
+    --ring: 353 45% 81%;
+
+    --sidebar-background: 227 7% 18%;
+    --sidebar-foreground: 9 68% 96%;
+    --sidebar-primary: 353 45% 81%;
+    --sidebar-primary-foreground: 227 7% 18%;
+    --sidebar-accent: 227 7% 24%;
+    --sidebar-accent-foreground: 9 68% 96%;
+    --sidebar-border: 227 7% 28%;
+    --sidebar-ring: 353 45% 81%;
   }
 }
 
@@ -105,5 +102,6 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: "Poppins", "Inter", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
 }
