@@ -40,6 +40,18 @@ const App = () => {
           <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/chat" element={<Chat />} />
+            <Route path="/tracker" element={<Tracker />} />
+            <Route path="/quotes" element={<Quotes />} />
+            <Route path="/challenges" element={<Challenges />} />
+            <Route path="/tasks" element={<Tasks />} />
+            <Route path="/community" element={<Community />} />
+            <Route path="/mood" element={<Mood />} />
+            <Route path="/growth" element={<Growth />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/signin" element={<SignIn />} />
+            <Route path="/signup" element={<SignUp />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
