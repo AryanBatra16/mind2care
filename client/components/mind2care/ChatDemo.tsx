@@ -6,7 +6,7 @@ interface Msg {
   time?: string;
 }
 
-export default function ChatDemo({ height = 78 }: { height?: number }) {
+export default function ChatDemo({ height = 78, inputId }: { height?: number; inputId?: string }) {
   const [messages] = useState<Msg[]>([
     { from: "ai", text: "Hi! I'm here to support you. How are you feeling today?", time: "9:00" },
   ]);
@@ -76,6 +76,7 @@ export default function ChatDemo({ height = 78 }: { height?: number }) {
               📎
             </button>
             <input
+              id={inputId}
               aria-label="Message"
               className="flex-1 rounded-xl border border-[hsl(var(--grayblue))] bg-[hsl(var(--offwhite))] px-3 py-3 text-sm outline-none placeholder:text-[hsl(var(--charcoal))]/60 focus:ring-2 focus:ring-ring"
               placeholder="Share how you’re feeling today…"
