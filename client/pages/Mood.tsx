@@ -14,7 +14,7 @@ export default function Mood() {
                 <p className="text-sm font-medium text-[hsl(var(--charcoal))]">Triggers</p>
                 <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-[hsl(var(--charcoal))]/80">
                   <li>Mondays</li>
-                  <li>Sleep < 6h</li>
+                  <li>Sleep &lt; 6h</li>
                 </ul>
               </CardBody>
             </Card>
