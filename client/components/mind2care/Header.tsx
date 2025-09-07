@@ -7,15 +7,21 @@ function Brand() {
     <a href="#top" className="inline-flex items-center gap-2">
       <span className="relative inline-flex h-8 w-8 items-center justify-center rounded-xl bg-primary shadow-soft">
         <span className="absolute inset-0 rounded-xl bg-gradient-to-br from-primary/70 to-primary/40" />
-        <span className="relative text-sm font-semibold text-primary-foreground">M2</span>
+        <span className="relative text-sm font-semibold text-primary-foreground">
+          M2
+        </span>
       </span>
-      <span className="text-xl font-bold tracking-tight text-foreground">Mind2Care</span>
+      <span className="text-xl font-bold tracking-tight text-foreground">
+        Mind2Care
+      </span>
     </a>
   );
 }
 
 function Button(
-  props: ButtonHTMLAttributes<HTMLButtonElement> & { variant?: "primary" | "secondary" },
+  props: ButtonHTMLAttributes<HTMLButtonElement> & {
+    variant?: "primary" | "secondary";
+  },
 ) {
   const { className, variant = "primary", ...rest } = props;
   return (
@@ -52,7 +58,12 @@ export default function Header({ onMenuClick }: Props) {
           <Brand />
         </div>
         <div className="flex items-center justify-end gap-3">
-          <a href="/signin" className="rounded-full bg-[hsl(var(--rose))] px-5 py-2 text-sm font-semibold text-white shadow-soft hover:scale-[1.02]">Sign In / Sign Up</a>
+          <a
+            href="/signin"
+            className="rounded-full bg-[hsl(var(--rose))] px-5 py-2 text-sm font-semibold text-white shadow-soft hover:scale-[1.02]"
+          >
+            Sign In / Sign Up
+          </a>
         </div>
       </div>
     </header>

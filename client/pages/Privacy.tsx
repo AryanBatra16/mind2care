@@ -3,7 +3,11 @@ export default function Privacy() {
     <main className="mx-auto max-w-5xl px-6">
       <section className="prose prose-neutral mx-auto mt-8 max-w-3xl">
         <h1>Privacy Policy</h1>
-        <p>Your privacy matters. We store minimal necessary data and use anonymous identifiers (UUID). Data is encrypted in transit and at rest.</p>
+        <p>
+          Your privacy matters. We store minimal necessary data and use
+          anonymous identifiers (UUID). Data is encrypted in transit and at
+          rest.
+        </p>
         <h2>Data we collect</h2>
         <ul>
           <li>Anonymous usage metrics</li>

@@ -1,4 +1,15 @@
-import { CalendarCheck, Quote, Flag, CheckCircle2, Users, Smile, Map, Bot, Home, Info } from "lucide-react";
+import {
+  CalendarCheck,
+  Quote,
+  Flag,
+  CheckCircle2,
+  Users,
+  Smile,
+  Map,
+  Bot,
+  Home,
+  Info,
+} from "lucide-react";
 import { useLocation } from "react-router-dom";
 
 interface SidebarProps {
@@ -34,7 +45,12 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
       >
         <div className="flex items-center justify-between border-b border-border px-5 py-4">
           <span className="text-base font-semibold">Menu</span>
-          <button onClick={onClose} className="rounded-xl bg-secondary px-3 py-1 text-xs font-semibold text-secondary-foreground">Close</button>
+          <button
+            onClick={onClose}
+            className="rounded-xl bg-secondary px-3 py-1 text-xs font-semibold text-secondary-foreground"
+          >
+            Close
+          </button>
         </div>
         <nav className="grid grid-cols-1 gap-4 p-5">
           {links.map((l) => {
@@ -47,7 +63,9 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
                 onClick={onClose}
               >
                 <l.icon className="h-5 w-5 text-foreground" />
-                <span className="text-sm font-medium text-foreground">{l.label}</span>
+                <span className="text-sm font-medium text-foreground">
+                  {l.label}
+                </span>
               </a>
             );
           })}

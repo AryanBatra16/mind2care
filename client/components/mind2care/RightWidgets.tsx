@@ -7,7 +7,9 @@ export default function RightWidgets() {
   return (
     <aside className="flex w-full flex-col gap-4 md:sticky md:top-24 md:w-80">
       <div className="rounded-2xl bg-gradient-to-r from-primary/80 to-card p-5 text-center text-foreground shadow-soft">
-        <p className="text-sm font-medium">“Your feelings are valid. Breathe in, breathe out.”</p>
+        <p className="text-sm font-medium">
+          “Your feelings are valid. Breathe in, breathe out.”
+        </p>
       </div>
       <div className="rounded-2xl border border-border bg-card p-5 shadow-soft">
         <p className="text-sm font-semibold text-foreground">Quick Mood</p>

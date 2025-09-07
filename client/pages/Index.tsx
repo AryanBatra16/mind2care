@@ -1,4 +1,13 @@
-import { Bot, CalendarCheck, Quote as QuoteIcon, Flag, CheckCircle2, Users, Smile, Map } from "lucide-react";
+import {
+  Bot,
+  CalendarCheck,
+  Quote as QuoteIcon,
+  Flag,
+  CheckCircle2,
+  Users,
+  Smile,
+  Map,
+} from "lucide-react";
 import FeatureCard from "@/components/mind2care/FeatureCard";
 import QuoteBanner from "@/components/mind2care/QuoteBanner";
 import GrowthMap from "@/components/mind2care/GrowthMap";
@@ -29,19 +38,53 @@ export default function Index() {
 
       {/* Core Features */}
       <section className="mt-16 md:mt-24">
-        <h2 className="text-center text-2xl font-bold text-[hsl(var(--charcoal))] md:text-3xl">Core Features</h2>
+        <h2 className="text-center text-2xl font-bold text-[hsl(var(--charcoal))] md:text-3xl">
+          Core Features
+        </h2>
         <p className="mx-auto mt-2 max-w-2xl text-center text-[hsl(var(--charcoal))]/70">
           Gentle routines, reflections, and a supportive community.
         </p>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          <FeatureCard icon={<Bot className="h-5 w-5" />} title="AI Chatbot" desc="Compassionate conversations 24/7." />
-          <FeatureCard icon={<CalendarCheck className="h-5 w-5" />} title="Daily Tracker" desc="Small habits, big change." />
-          <FeatureCard icon={<QuoteIcon className="h-5 w-5" />} title="Quotes" desc="Daily inspiration to lift you up." />
-          <FeatureCard icon={<Flag className="h-5 w-5" />} title="Challenges" desc="Weekly mindful challenges." />
-          <FeatureCard icon={<CheckCircle2 className="h-5 w-5" />} title="Self Tasks" desc="Gentle to-dos for your day." />
-          <FeatureCard icon={<Users className="h-5 w-5" />} title="Community" desc="Anonymous, supportive sharing." />
-          <FeatureCard icon={<Smile className="h-5 w-5" />} title="Mood Tracker" desc="See and understand patterns." />
-          <FeatureCard icon={<Map className="h-5 w-5" />} title="Growth Map" desc="Celebrate milestones on your path." />
+          <FeatureCard
+            icon={<Bot className="h-5 w-5" />}
+            title="AI Chatbot"
+            desc="Compassionate conversations 24/7."
+          />
+          <FeatureCard
+            icon={<CalendarCheck className="h-5 w-5" />}
+            title="Daily Tracker"
+            desc="Small habits, big change."
+          />
+          <FeatureCard
+            icon={<QuoteIcon className="h-5 w-5" />}
+            title="Quotes"
+            desc="Daily inspiration to lift you up."
+          />
+          <FeatureCard
+            icon={<Flag className="h-5 w-5" />}
+            title="Challenges"
+            desc="Weekly mindful challenges."
+          />
+          <FeatureCard
+            icon={<CheckCircle2 className="h-5 w-5" />}
+            title="Self Tasks"
+            desc="Gentle to-dos for your day."
+          />
+          <FeatureCard
+            icon={<Users className="h-5 w-5" />}
+            title="Community"
+            desc="Anonymous, supportive sharing."
+          />
+          <FeatureCard
+            icon={<Smile className="h-5 w-5" />}
+            title="Mood Tracker"
+            desc="See and understand patterns."
+          />
+          <FeatureCard
+            icon={<Map className="h-5 w-5" />}
+            title="Growth Map"
+            desc="Celebrate milestones on your path."
+          />
         </div>
       </section>
 
@@ -51,8 +94,13 @@ export default function Index() {
       {/* Personal Growth Map Section */}
       <section className="mt-16 rounded-3xl bg-[hsl(var(--offwhite))] p-8 shadow-soft md:mt-24">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-2xl font-bold text-[hsl(var(--charcoal))] md:text-3xl">Personal Growth Map</h2>
-          <p className="mt-2 text-[hsl(var(--charcoal))]/70">Follow a gentle path of milestones designed for reflection and growth.</p>
+          <h2 className="text-2xl font-bold text-[hsl(var(--charcoal))] md:text-3xl">
+            Personal Growth Map
+          </h2>
+          <p className="mt-2 text-[hsl(var(--charcoal))]/70">
+            Follow a gentle path of milestones designed for reflection and
+            growth.
+          </p>
         </div>
         <div className="mt-10">
           <GrowthMap />
@@ -62,13 +110,26 @@ export default function Index() {
       {/* Community Section */}
       <section className="mt-16 md:mt-24">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-2xl font-bold text-[hsl(var(--charcoal))] md:text-3xl">Community</h2>
-          <p className="mt-2 text-[hsl(var(--charcoal))]/70">Share experiences anonymously and support others on their journey.</p>
+          <h2 className="text-2xl font-bold text-[hsl(var(--charcoal))] md:text-3xl">
+            Community
+          </h2>
+          <p className="mt-2 text-[hsl(var(--charcoal))]/70">
+            Share experiences anonymously and support others on their journey.
+          </p>
         </div>
         <div className="mt-8 grid gap-5 md:grid-cols-3">
-          <CommunityCard author="Anonymous" text="Today I took a short walk and practiced breathing. Felt lighter." />
-          <CommunityCard author="Anonymous" text="Writing down three things I'm grateful for has helped a lot." />
-          <CommunityCard author="Anonymous" text="Struggled in the morning, but finished the day with a small win." />
+          <CommunityCard
+            author="Anonymous"
+            text="Today I took a short walk and practiced breathing. Felt lighter."
+          />
+          <CommunityCard
+            author="Anonymous"
+            text="Writing down three things I'm grateful for has helped a lot."
+          />
+          <CommunityCard
+            author="Anonymous"
+            text="Struggled in the morning, but finished the day with a small win."
+          />
         </div>
       </section>
 
