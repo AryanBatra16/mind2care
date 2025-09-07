@@ -10,8 +10,8 @@ export default function Community() {
         <div className="mb-4 flex items-center gap-2">
           {['anxiety','career','relationships','study'].map(t=> <button key={t} className="rounded-full bg-white px-3 py-1 text-xs capitalize text-[hsl(var(--charcoal))]">{t}</button>)}
         </div>
-        <div className="mb-4 rounded-2xl border border-[hsl(var(--grayblue))] bg-[hsl(var(--beige))] p-4">
-          <textarea className="h-24 w-full rounded-xl border border-[hsl(var(--grayblue))] bg-[hsl(var(--beige))] p-3 text-sm" placeholder="Share something..." />
+        <div className="mb-4 rounded-2xl border border-[hsl(var(--grayblue))] bg-white p-4">
+          <textarea className="h-24 w-full rounded-xl border border-[hsl(var(--grayblue))] bg-white p-3 text-sm" placeholder="Share something..." />
           <div className="mt-2 flex items-center justify-between">
             <label className="text-xs text-[hsl(var(--charcoal))]">
               <input type="checkbox" className="mr-2" /> Post anonymously
