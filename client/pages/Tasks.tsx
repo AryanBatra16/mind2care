@@ -7,7 +7,7 @@ export default function Tasks() {
         <header className="mb-4 flex items-center justify-between gap-3">
           <h1 className="text-xl font-semibold text-[hsl(var(--charcoal))]">Self Tasks</h1>
           <div className="flex gap-2">
-            <input className="w-56 rounded-xl border border-[hsl(var(--grayblue))] bg-[hsl(var(--beige))] px-3 py-2 text-sm" placeholder="Add a task" />
+            <input className="w-56 rounded-xl border border-[hsl(var(--grayblue))] bg-white px-3 py-2 text-sm" placeholder="Add a task" />
             <Button>Add</Button>
           </div>
         </header>
