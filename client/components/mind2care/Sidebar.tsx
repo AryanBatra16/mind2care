@@ -36,7 +36,7 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
             <a
               key={l.label}
               href={l.href}
-              className="flex items-center gap-3 rounded-2xl border border-border bg-card p-4 shadow-soft transition-transform hover:scale-[1.01] hover:shadow-card"
+              className="flex items-center gap-3 rounded-2xl border border-border bg-card p-4 shadow-soft transition-transform hover:scale-[1.01] hover:shadow-card hover:border-primary/70 hover:bg-primary/10"
               onClick={onClose}
             >
               <l.icon className="h-5 w-5 text-foreground" />
