@@ -34,7 +34,7 @@ export default function ChatDemo({ fullHeight = false }: { fullHeight?: boolean 
           ))}
           {typing && (
             <div className="flex justify-start">
-              <div className="rounded-2xl rounded-bl-md bg-[hsl(var(--grayblue))] px-4 py-3 text-sm text-[hsl(var(--charcoal))] shadow-soft">
+              <div className="rounded-2xl rounded-bl-md bg-[hsl(var(--beige))] px-4 py-3 text-sm text-[hsl(var(--charcoal))] shadow-soft">
                 <span className="inline-flex items-center gap-1">
                   <span className="h-1 w-1 animate-bounce rounded-full bg-[hsl(var(--charcoal))] [animation-delay:-0.2s]" />
                   <span className="h-1 w-1 animate-bounce rounded-full bg-[hsl(var(--charcoal))]" />
