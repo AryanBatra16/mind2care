@@ -13,7 +13,7 @@ export default function Tracker() {
               <h2 className="text-base font-semibold text-[hsl(var(--charcoal))]">Journal entry</h2>
             </CardHeader>
             <CardBody>
-              <textarea className="h-40 w-full rounded-xl border border-[hsl(var(--grayblue))] bg-[hsl(var(--beige))] p-3 text-sm" placeholder="Write your thoughts..." />
+              <textarea className="h-40 w-full rounded-xl border border-[hsl(var(--grayblue))] bg-white p-3 text-sm" placeholder="Write your thoughts..." />
               <div className="mt-3 flex items-center gap-3">
                 <input type="range" min={1} max={5} className="w-40" aria-label="Mood slider" />
                 <div className="flex gap-2 text-xs">
