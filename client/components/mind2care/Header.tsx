@@ -52,7 +52,7 @@ export default function Header({ onMenuClick }: Props) {
           <Brand />
         </div>
         <div className="flex items-center justify-end gap-3">
-          <Button className="rounded-full px-5">Sign In / Sign Up</Button>
+          <a href="/signin" className="rounded-full bg-[hsl(var(--rose))] px-5 py-2 text-sm font-semibold text-white shadow-soft hover:scale-[1.02]">Sign In / Sign Up</a>
         </div>
       </div>
     </header>

@@ -52,6 +52,13 @@
     --sidebar-accent-foreground: 227 7% 39%;
     --sidebar-border: 201 10% 82%;
     --sidebar-ring: 353 45% 81%;
+
+    /* Token aliases */
+    --rose: var(--primary);
+    --offwhite: var(--background);
+    --beige: var(--card);
+    --grayblue: var(--border);
+    --charcoal: var(--foreground);
   }
 
   .dark {
@@ -92,6 +99,12 @@
     --sidebar-accent-foreground: 9 68% 96%;
     --sidebar-border: 227 7% 28%;
     --sidebar-ring: 353 45% 81%;
+
+    --rose: var(--primary);
+    --offwhite: var(--background);
+    --beige: var(--card);
+    --grayblue: var(--border);
+    --charcoal: var(--foreground);
   }
 }
 
@@ -104,4 +117,8 @@
     @apply bg-background text-foreground;
     font-family: "Poppins", "Inter", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
+
+  a { @apply transition-all duration-150; }
+  button { @apply transition-all duration-150; }
+  :focus-visible { @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background; }
 }

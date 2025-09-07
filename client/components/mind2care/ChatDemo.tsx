@@ -1,4 +1,4 @@
-export default function ChatDemo() {
+export default function ChatDemo({ fullHeight = false }: { fullHeight?: boolean }) {
   const messages = [
     { from: "ai", text: "Hi! I'm here to support you. How are you feeling today?" },
     { from: "user", text: "A bit anxious, but trying to stay positive." },
@@ -12,7 +12,7 @@ export default function ChatDemo() {
         {messages.map((m, i) => (
           <div key={i} className={`flex ${m.from === "user" ? "justify-end" : "justify-start"}`}>
             <div
-              className={`max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed shadow-soft ${m.from === "user" ? "bg-primary text-white rounded-br-md" : "bg-[hsl(var(--border))] text-foreground rounded-bl-md"}`}
+              className={`max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed shadow-soft ${m.from === "user" ? "bg-[hsl(var(--rose))] text-white rounded-br-md" : "bg-[hsl(var(--grayblue))] text-[hsl(var(--charcoal))] rounded-bl-md"}`}
             >
               {m.text}
             </div>
