@@ -1,5 +1,6 @@
 import { ButtonHTMLAttributes } from "react";
 import { cn } from "@/lib/utils";
+import { Menu } from "lucide-react";
 
 function Brand() {
   return (
@@ -32,27 +33,26 @@ function Button(
   );
 }
 
-export default function Header() {
+type Props = { onMenuClick?: () => void };
+
+export default function Header({ onMenuClick }: Props) {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-border/60 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <Brand />
-        <nav className="hidden items-center gap-6 md:flex">
-          <a href="#features" className="text-sm text-foreground/80 hover:text-foreground">
-            Features
-          </a>
-          <a href="#chatbot" className="text-sm text-foreground/80 hover:text-foreground">
-            Chatbot
-          </a>
-          <a href="#growth" className="text-sm text-foreground/80 hover:text-foreground">
-            Growth Map
-          </a>
-          <a href="#community" className="text-sm text-foreground/80 hover:text-foreground">
-            Community
-          </a>
-        </nav>
-        <div className="flex items-center gap-3">
-          <Button>Get Started</Button>
+      <div className="mx-auto grid max-w-7xl grid-cols-3 items-center px-6 py-4">
+        <div className="flex items-center gap-2">
+          <button
+            aria-label="Open menu"
+            onClick={onMenuClick}
+            className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-secondary text-secondary-foreground shadow-soft transition-transform hover:scale-[1.03]"
+          >
+            <Menu className="h-5 w-5" />
+          </button>
+        </div>
+        <div className="flex items-center justify-center">
+          <Brand />
+        </div>
+        <div className="flex items-center justify-end gap-3">
+          <Button className="rounded-full px-5">Sign In / Sign Up</Button>
         </div>
       </div>
     </header>
