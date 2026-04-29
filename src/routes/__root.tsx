@@ -29,14 +29,14 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Mind2Care" },
+      { name: "description", content: "A mental health and wellness companion app" },
+      { name: "author", content: "Aryan Batra & Saumya Narang" },
+      { property: "og:title", content: "Mind2Care" },
+      { property: "og:description", content: "A mental health and wellness companion app" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@Mind2Care" },
     ],
     links: [
       {
