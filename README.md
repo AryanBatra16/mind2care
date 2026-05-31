@@ -56,8 +56,8 @@ To get started with this project locally, follow these steps:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/AryanBatra16/mindful-pathways
-   cd mindful-pathways
+   git clone https://github.com/AryanBatra16/mind2care
+   cd mind2care
    ```
 
 2. **Install Dependencies:**
@@ -153,4 +153,4 @@ Feel free to:
 
 ---
 
-Built with 💚 by **Saumya Narang**
+Built by Aryan Batra
